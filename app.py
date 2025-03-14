@@ -4,7 +4,7 @@ from itertools import product
 import pandas as pd
 
 from libs.training import *
-from libs.evaulation import *
+from libs.evaluation import *
 
 
 def grid_search():
@@ -17,7 +17,7 @@ def grid_search():
     # print("\nsample-text: ", sample_text)
     # print("\ntest-words: ", test_words)
 
-    epochx = 100
+    epochx = 10
     window_sizes = [1, 2, 3]
     embedding_dims = [50, 100, 200]
 
